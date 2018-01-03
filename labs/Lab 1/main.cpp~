@@ -1,0 +1,52 @@
+/************************************************************************
+** Program name: CS162 Lab 1
+** Author: David Mednikov
+** Date: 01/12/17
+** Description: This program will calculate the determininant of a user-
+** entered square matrix. This particular file is the main method, which
+** will ask the user how large the matrix should be, then call on the
+** readMatrix method to fill the array, then use the determinant method
+** to calculate the determinant of the matrix. It will then display the
+** array and the determinant to the user.
+************************************************************************/
+#include "readMatrix.h"
+#include "determinant.h"
+#include <iostream>
+
+using std::cout;
+using std::cin;
+using std::endl;
+
+int main()
+{
+    int arraySize;
+    int matrix[3][3]
+	
+    cout << "Please select the size of the matrix.\n";
+    cout << "Enter 2 for a 2x2 matrix and enter 3 for a 3x3 matrix: ";
+    cin >> arraySize;
+
+    readMatrix(matrix, arraySize);
+    int det = determinant(matrix, arraySize);
+
+    for (int row = 0; row < arraySize; row++)
+    {
+	for (int col = 0; col < arraySize; col++)
+	{
+		cout << matrix[row][col];
+
+		if (col == arraySize - 1)
+		{
+		    cout << endl;
+		}
+		else
+		{
+		    cout << "  ";
+		}
+	}
+    }
+
+    cout << "The determinant of this matrix is: " << det;
+
+    return 0;
+}

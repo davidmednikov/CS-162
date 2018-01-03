@@ -1,0 +1,39 @@
+basketball game
+
+player abstract class
+
+5 players
+kobe
+lebron
+steph
+shaq
+ivica zubac
+
+square abstract class?
+
+3 types of squares
+out of bounds
+2 points
+3 points
+
+array of squares
+
+player class
+variables
+row
+col
+bool hasball
+double fg perct
+double 3p perct
+
+methods
+int shoot
+void move
+
+ball class
+
+court class
+
+make the court the 3d pointer (2d array of pointers)
+
+but make the actual board print from a 2d array of chars

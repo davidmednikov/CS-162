@@ -1,0 +1,42 @@
+/************************************************************************
+** Program name: CS162 Lab 1
+** Author: David Mednikov
+** Date: 01/12/17
+** Description: This program will calculate the determininant of a user-
+** entered square matrix. This particular file is the specification file
+** for the readMatrix function, which will prompt the user to fill a square
+** matrix and store the input into a 2D array.
+************************************************************************/
+
+#include "readMatrix.h"
+#include <iostream>
+
+using std::cout;
+using std::cin;
+using std::endl;
+
+void readMatrix(int (*array)[][], int arraySize)
+{
+    if (arraySize == 2)
+    {
+        for (int row = 0; row < 2; row++)
+	{
+	    for (int col = 0; col < 2; col++)
+	    {
+		cout << "Please enter the next element: ";
+		cin >> array[row][col];
+	    }
+	}
+    }
+    else if (arraySize == 3)
+    {
+	for (int row = 0; row < 3; row++)
+	{
+	    for (int col = 0; col < 3; col++)
+	    {
+		cout << "Please enter the next element: ";
+		cin >> array[row][col];
+	    }
+	}
+    }
+}

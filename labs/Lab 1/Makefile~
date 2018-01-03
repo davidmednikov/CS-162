@@ -1,0 +1,14 @@
+main: determinant.o readMatrix.o main.o
+    g++ determinant.o readMatrix.o main.o -o main
+
+determinant.o: determinant.h determinant.cpp
+    g++ determinant.h determinant.cpp -c
+
+readMatrix.o: readMatrix.h readMatrix.cpp
+    g++ readMatrix.h readMatrix.cpp -c
+
+main.o: determinant.h readMatrix.h main.cpp
+    g++ main.cpp determinant.h readMatrix.h -c
+
+clean:
+    rm *.o

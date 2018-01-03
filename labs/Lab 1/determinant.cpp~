@@ -1,0 +1,33 @@
+/************************************************************************
+** Program name: CS162 Lab 1
+** Author: David Mednikov
+** Date: 01/12/17
+** Description: This program will calculate the determininant of a user-
+** entered square matrix. This particular file is the specification file
+** for the determinant function, which will calculate the determinant
+** of the matrix created by the user.
+************************************************************************/
+
+#include "determinant.h"
+#include <iostream>
+
+using std::cout;
+using std::cin;
+using std::endl;
+
+int determinant(int array[][], int arraySize)
+{
+    if (arraySize == 2)
+    {
+	return (array[0][0] * array[1][1] - array[0][1] * array[1][0]);
+    }
+    else if (arraySize == 3)
+    {
+	int det1 = array[0][0] * (array[1][1] * array[2][2] - array[1][2] * array[2][1]);
+	int det2 = array[0][1] * (array[1][0] * array[2][2] - array[1][2] * array[2][0]);
+	int det3 = array[0][2] * (array[1][0] * array[2][1] - array[1][1] * array[2][0]);
+
+	return det1 - det2 + det3;
+    }
+}
+

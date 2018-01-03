@@ -1,0 +1,10 @@
+﻿  main.cpp
+c:\users\dave\onedrive - oregon state university\osu\162\projects\project 3\project 3\project 3\main.cpp(45): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\dave\onedrive - oregon state university\osu\162\projects\project 3\project 3\project 3\main.cpp(519): warning C4018: '<': signed/unsigned mismatch
+c:\users\dave\onedrive - oregon state university\osu\162\projects\project 3\project 3\project 3\main.cpp(523): warning C4018: '<': signed/unsigned mismatch
+c:\users\dave\onedrive - oregon state university\osu\162\projects\project 3\project 3\project 3\main.cpp(527): warning C4018: '<': signed/unsigned mismatch
+c:\users\dave\onedrive - oregon state university\osu\162\projects\project 3\project 3\project 3\main.cpp(536): warning C4018: '<': signed/unsigned mismatch
+c:\users\dave\onedrive - oregon state university\osu\162\projects\project 3\project 3\project 3\main.cpp(540): warning C4018: '<': signed/unsigned mismatch
+c:\users\dave\onedrive - oregon state university\osu\162\projects\project 3\project 3\project 3\main.cpp(544): warning C4018: '<': signed/unsigned mismatch
+  Project 3.vcxproj -> C:\Users\Dave\OneDrive - Oregon State University\OSU\162\projects\project 3\Project 3\Debug\Project 3.exe
+  Project 3.vcxproj -> C:\Users\Dave\OneDrive - Oregon State University\OSU\162\projects\project 3\Project 3\Debug\Project 3.pdb (Partial PDB)
